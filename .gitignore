@@ -54,3 +54,8 @@ dist/
 *.db
 *.sqlite
 *.sqlite3
+
+# Vercel
+.vercel/
+
+.vercel

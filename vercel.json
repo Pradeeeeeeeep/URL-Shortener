@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/urls",
+      "destination": "/api/index.py?__path=/urls"
+    },
+    {
+      "source": "/urls/:path*",
+      "destination": "/api/index.py?__path=/urls/:path*"
+    },
+    {
+      "source": "/health",
+      "destination": "/api/index.py?__path=/health"
+    },
+    {
+      "source": "/docs",
+      "destination": "/api/index.py?__path=/docs"
+    },
+    {
+      "source": "/openapi.json",
+      "destination": "/api/index.py?__path=/openapi.json"
+    },
+    {
+      "source": "/:code([a-zA-Z0-9_-]{4,16})",
+      "destination": "/api/index.py?__path=/:code"
+    }
+  ]
+}
+
